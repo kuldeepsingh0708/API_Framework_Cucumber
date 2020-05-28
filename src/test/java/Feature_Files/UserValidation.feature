@@ -15,6 +15,7 @@ Examples:
 	|Email						| Password |
 	|amchimumbai@erostest.com	| password |
 	|kuldeepsingh0708@gmail.com	| password |
+	|kuldeepsingh@erostest.com	| password |
 	
 
 @UserDetails @Sanity @Regression
