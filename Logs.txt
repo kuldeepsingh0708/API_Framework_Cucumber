@@ -1,0 +1,33 @@
+Request method:	POST
+Request URI:	https://stgapigateway.erosnow.com/api/v1/auth/users/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-device-id=wewef343rwsw33434343fsfs
+				x-api-client=38ZrlUh4q4HI8ReAxt5ddvlCR8Z01gJpgudYN5fu
+				x-platform=Android
+				x-country=IN
+				x-api-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1dWlkIjoxNTcwMDk2OTM0MzU2LCJleHAiOjE1OTA2MzQ5MzV9.NZHnIrIrbjvowVd46HEimL2QRDZGvTu4YNueeM6XN8M
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 28 May 2020 02:47:53 GMT
+Content-Type: application/json
+Content-Length: 97
+Connection: keep-alive
+Server: nginx/1.14.0 (Ubuntu)
+Vary: Accept, Cookie
+Allow: POST, OPTIONS
+X-Frame-Options: SAMEORIGIN
+
+{
+    "status": "success",
+    "data": null,
+    "message": "User was logged out successfully.",
+    "status_code": null
+}
