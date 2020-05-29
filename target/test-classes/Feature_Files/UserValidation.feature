@@ -19,13 +19,13 @@ Examples:
 	
 	
 
-@country_List @Sanity @Regression
-Scenario: Verify country_List by using country_List API
+#@country_List @Sanity @Regression
+#Scenario: Verify country_List by using country_List API
 
-Given country_List payload
-When  user call "country_List" API with "GET" http request
-Then  API call got sucess with Status 200
-And   "status" in response "success"	
+#Given country_List payload
+#When  user call "country_List" API with "GET" http request
+#Then  API call got sucess with Status 200
+#And   "status" in response "success"	
 	
 
 @UserDetails @Sanity @Regression

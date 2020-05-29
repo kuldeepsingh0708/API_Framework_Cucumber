@@ -71,12 +71,12 @@ public class UserValidation_StepDefination extends Utils {
 
 	}
 	
-	@Given("country_List payload")
+/*	@Given("country_List payload")
 	public void country_list_payload() throws IOException {
 	rqsp = given().spec(requestSpecifications());
 	rqsp.header("x-service-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.aIHewsQGwbYfjqBFNR-u4iqdnXOy6_baPUBisDWgc48");
 	    
-	}
+	}*/
 	
 
 	
@@ -92,11 +92,6 @@ public class UserValidation_StepDefination extends Utils {
 	rqsp.header("x-api-token",UserValidation_StepDefination.Token);
 
 	}
-
-/*	@Then("{string} in response body is {string}")
-	public void in_response(String Key_Value, String Expected_Value) {
-		assertEquals(getJsonPath(response, Key_Value), Expected_Value);
-	}*/
 
 	@Given("logout payload")
 	public void logout_payload() throws IOException {
