@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "/Users/kuldeepsingh/git/API_RestAssured_Framework/API_FrameWork/src/test/java/Feature_Files", 
 plugin = "json:target/jsonReports/Cucumber_Reports.json", 
-glue = {"Step_Definations"},tags = {""})
+glue = {"Step_Definations"},tags = {"@Sanity"})
 
 public class TestRunner {
 

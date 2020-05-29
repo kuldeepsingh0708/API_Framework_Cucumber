@@ -9,14 +9,14 @@ Headers:		x-device-id=wewef343rwsw33434343fsfs
 				x-api-client=CEPQWJEEl8AZgYuyioUiVX6f0vuUwh7r0j3cSp3m
 				x-platform=iOS
 				x-country=IN
-				x-api-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1dWlkIjoxNTcwMDk2OTM0MzU2LCJleHAiOjE1OTA3NTE4ODF9.IrjgvAjR7huI3KUTj7-GgXWh8pRcLMHsQXym0VuI8as
+				x-api-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1dWlkIjoxNTcwMDk2OTM0MzU2LCJleHAiOjE1OTA3NjQzMzN9.7M_Jfm1NcbBrjJML6Uoovq8yt4pbrxhA57mNx6W45b0
 				Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 29 May 2020 11:17:00 GMT
+Date: Fri, 29 May 2020 14:44:32 GMT
 Content-Type: application/json
 Content-Length: 97
 Connection: keep-alive
