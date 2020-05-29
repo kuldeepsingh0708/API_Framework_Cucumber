@@ -1,6 +1,6 @@
 package Resources;
 
-import POJO.UserLogin;
+import POJO.*;
 
 public class Test_Data 
 

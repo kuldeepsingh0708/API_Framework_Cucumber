@@ -3,363 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-05-28T02:47:44.863Z",
-        "line": 16,
-        "name": "Verify if Login is being sucessfull by email and password using login API",
-        "description": "",
-        "id": "validation-feature;verify-if-login-is-being-sucessfull-by-email-and-password-using-login-api;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 851934392,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user login payload with \"amchimumbai@erostest.com\" and \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amchimumbai@erostest.com\"",
-                  "offset": 24
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 55
-                }
-              ],
-              "location": "UserValidation_StepDefination.user_login_payload_with_and(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3262855190,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user call \"login\" API with \"POST\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"POST\"",
-                  "offset": 27
-                }
-              ],
-              "location": "UserValidation_StepDefination.user_call_API_with_http_request(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1720449,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "API call got sucess with Status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 32
-                }
-              ],
-              "location": "UserValidation_StepDefination.api_call_got_sucess_with_Status(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 295998703,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "\"status\" in response body is \"success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"success\"",
-                  "offset": 29
-                }
-              ],
-              "location": "UserValidation_StepDefination.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23020347,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "\"message\" in response body is \"User logged in successfully\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"message\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"User logged in successfully\"",
-                  "offset": 30
-                }
-              ],
-              "location": "UserValidation_StepDefination.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@Sanity"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-28T02:47:49.334Z",
-        "line": 17,
-        "name": "Verify if Login is being sucessfull by email and password using login API",
-        "description": "",
-        "id": "validation-feature;verify-if-login-is-being-sucessfull-by-email-and-password-using-login-api;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6846340,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user login payload with \"kuldeepsingh0708@gmail.com\" and \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kuldeepsingh0708@gmail.com\"",
-                  "offset": 24
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 57
-                }
-              ],
-              "location": "UserValidation_StepDefination.user_login_payload_with_and(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1897421345,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user call \"login\" API with \"POST\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"POST\"",
-                  "offset": 27
-                }
-              ],
-              "location": "UserValidation_StepDefination.user_call_API_with_http_request(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 86431,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "API call got sucess with Status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 32
-                }
-              ],
-              "location": "UserValidation_StepDefination.api_call_got_sucess_with_Status(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16858193,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "\"status\" in response body is \"success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"success\"",
-                  "offset": 29
-                }
-              ],
-              "location": "UserValidation_StepDefination.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13162450,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "\"message\" in response body is \"User logged in successfully\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"message\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"User logged in successfully\"",
-                  "offset": 30
-                }
-              ],
-              "location": "UserValidation_StepDefination.in_response_body_is(String,String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@Sanity"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-28T02:47:51.269Z",
-        "line": 21,
-        "name": "Verify User Details by using users API",
-        "description": "",
-        "id": "validation-feature;verify-user-details-by-using-users-api",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2578167,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "users payload",
-            "match": {
-              "location": "UserValidation_StepDefination.users_payload()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1247833245,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user call \"users\" API with \"GET\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"users\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"GET\"",
-                  "offset": 27
-                }
-              ],
-              "location": "UserValidation_StepDefination.user_call_API_with_http_request(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 74196,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "API call got sucess with Status 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 32
-                }
-              ],
-              "location": "UserValidation_StepDefination.api_call_got_sucess_with_Status(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9622136,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "\"status\" in response \"success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 0
-                },
-                {
-                  "val": "\"success\"",
-                  "offset": 21
-                }
-              ],
-              "location": "UserValidation_StepDefination.in_response(String,String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@UserDetails"
-          },
-          {
-            "name": "@Sanity"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-28T02:47:52.531Z",
+        "start_timestamp": "2020-05-29T09:12:51.854Z",
         "before": [
           {
             "result": {
-              "duration": 148605,
+              "duration": 3827896108,
               "status": "passed"
             },
             "match": {
@@ -367,7 +15,7 @@
             }
           }
         ],
-        "line": 30,
+        "line": 41,
         "name": "Verify if Logout is sucessfull by using logout API",
         "description": "",
         "id": "validation-feature;verify-if-logout-is-sucessfull-by-using-logout-api",
@@ -376,10 +24,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2319305,
+              "duration": 5343399,
               "status": "passed"
             },
-            "line": 32,
+            "line": 43,
             "name": "logout payload",
             "match": {
               "location": "UserValidation_StepDefination.logout_payload()"
@@ -388,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 1230652283,
+              "duration": 1382885207,
               "status": "passed"
             },
-            "line": 33,
+            "line": 44,
             "name": "user call \"logout\" API with \"POST\" http request",
             "match": {
               "arguments": [
@@ -410,10 +58,10 @@
           },
           {
             "result": {
-              "duration": 76646,
+              "duration": 145261,
               "status": "passed"
             },
-            "line": 34,
+            "line": 45,
             "name": "API call got sucess with Status 200",
             "match": {
               "arguments": [
@@ -428,10 +76,10 @@
           },
           {
             "result": {
-              "duration": 8478424,
+              "duration": 8892021,
               "status": "passed"
             },
-            "line": 35,
+            "line": 46,
             "name": "\"status\" in response \"success\"",
             "match": {
               "arguments": [

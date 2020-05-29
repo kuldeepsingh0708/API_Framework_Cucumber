@@ -19,6 +19,7 @@ import POJO.UserLogin;
 import Resources.API_Resources;
 import Resources.Test_Data;
 import Resources.Utils;
+import groovyjarjarpicocli.CommandLine.Spec;
 
 public class UserValidation_StepDefination extends Utils {
 
@@ -69,21 +70,39 @@ public class UserValidation_StepDefination extends Utils {
 		assertEquals(getJsonPath(response, Key_Value), Expected_Value);
 
 	}
-
-	@Given("users payload")
-	public void users_payload() throws IOException {
-		rqsp = given().spec(requestSpecifications());
+	
+	@Given("country_List payload")
+	public void country_list_payload() throws IOException {
+	rqsp = given().spec(requestSpecifications());
+	rqsp.header("x-service-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.aIHewsQGwbYfjqBFNR-u4iqdnXOy6_baPUBisDWgc48");
+	    
 	}
+	
 
+	
 	@Then("{string} in response {string}")
 	public void in_response(String Key_Value, String Expected_Value) {
 		assertEquals(getJsonPath(response, Key_Value), Expected_Value);
 	}
 
+
+	@Given("users payload")
+	public void users_payload() throws IOException {
+	rqsp = given().spec(requestSpecifications());
+	rqsp.header("x-api-token",UserValidation_StepDefination.Token);
+
+	}
+
+/*	@Then("{string} in response body is {string}")
+	public void in_response(String Key_Value, String Expected_Value) {
+		assertEquals(getJsonPath(response, Key_Value), Expected_Value);
+	}*/
+
 	@Given("logout payload")
 	public void logout_payload() throws IOException {
-		rqsp = given().spec(requestSpecifications());
-		Token = "";
+	rqsp = given().spec(requestSpecifications());
+	rqsp.header("x-api-token",UserValidation_StepDefination.Token);
+	Token = "";
 	}
 
 }

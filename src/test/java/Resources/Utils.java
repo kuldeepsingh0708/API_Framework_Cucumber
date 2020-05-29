@@ -28,12 +28,18 @@ public class Utils
 	{
 
 		PrintStream Log = new PrintStream(new FileOutputStream("Logs.txt"));
-		RequestSpecBuilder RS = new RequestSpecBuilder().setBaseUri(GetURL("StgURL"))
-				.addHeader("Content-Type", "application/json").addHeader("x-device-id", "wewef343rwsw33434343fsfs")
-				.addHeader("x-api-client", "38ZrlUh4q4HI8ReAxt5ddvlCR8Z01gJpgudYN5fu")
-				.addHeader("x-platform", "Android").addHeader("x-country", "IN")
-				.addHeader("x-api-token", UserValidation_StepDefination.Token)
-				.addFilter(RequestLoggingFilter.logRequestTo(Log)).addFilter(ResponseLoggingFilter.logResponseTo(Log))
+		RequestSpecBuilder RS = new RequestSpecBuilder()
+				.setBaseUri(GetURL("StgURL"))
+				.addHeader("Content-Type", "application/json")
+				.addHeader("x-device-id", "wewef343rwsw33434343fsfs")
+				.addHeader("x-api-client", "CEPQWJEEl8AZgYuyioUiVX6f0vuUwh7r0j3cSp3m")
+				.addHeader("x-platform", "iOS")
+				.addHeader("x-country", "IN")
+				//.addHeader("x-api-token", UserValidation_StepDefination.Token) //Incase need to send Token by default as Header 
+				.addFilter(RequestLoggingFilter
+				.logRequestTo(Log))
+				.addFilter(ResponseLoggingFilter
+				.logResponseTo(Log))
 				.setContentType(ContentType.JSON);
 
 				req = RS.build();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="Cucumber_Options.TestRunner" time="8.973" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="Cucumber_Options.TestRunner" time="9.698" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="cucumber.options" value="--tags @Sanity"/>
@@ -65,8 +65,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Validation Feature" name="Verify if Login is being sucessfull by email and password using login API" time="4.419"/>
-  <testcase classname="Validation Feature" name="Verify if Login is being sucessfull by email and password using login API" time="2.071"/>
-  <testcase classname="Validation Feature" name="Verify User Details by using users API" time="1.073"/>
+  <testcase classname="Validation Feature" name="Verify if Login is being sucessfull by email and password using login API" time="4.462"/>
+  <testcase classname="Validation Feature" name="Verify country_List by using country_List API" time="2.296"/>
+  <testcase classname="Validation Feature" name="Verify User Details by using users API" time="1.53"/>
   <testcase classname="Validation Feature" name="Verify if Logout is sucessfull by using logout API" time="1.41"/>
 </testsuite>
